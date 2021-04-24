@@ -1,4 +1,4 @@
-# helper scripts
+# elk scripts
 
 here you can find the following scripts:
 1. `csv_diff.py` compare two csv files<br>

@@ -56,7 +56,8 @@ es = elasticsearch.Elasticsearch(host)
 Get query from input
 '''
 if json_query:
-    query = json.loads(json_query)
+    with open(json_query) as json_file:
+        query = json.load(json_file)
 else:
     query = dict(
         query = dict(
